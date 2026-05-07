@@ -85,12 +85,12 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public String encode(String s) {
-		return Base64.getEncoder().encodeToString(s.getBytes());
+		return s;//Base64.getEncoder().encodeToString(s.getBytes());
 	}
 
 	@Override
 	public String decode(String s) {
-		return new String(Base64.getDecoder().decode(s));
+		return s;//new String(Base64.getDecoder().decode(s));
 	}
 
 	@Override

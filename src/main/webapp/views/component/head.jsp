@@ -1,6 +1,6 @@
 <%
 String assetspath = "/assets/";
-String siteName = "SoftWaves Technologies";
+String siteName = "Student Information Portal";
 String address = "414, Shagun Tower Vijay Nagar";
 String phoneNo = "+91 9770397704";
 %>

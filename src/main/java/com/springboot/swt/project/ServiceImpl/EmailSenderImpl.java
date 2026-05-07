@@ -17,7 +17,8 @@ import com.springboot.swt.project.Service.EmailSender;
 
 @Service
 public class EmailSenderImpl implements EmailSender {
-
+	private static String username="ioskvd777@gmail.com";
+	private static String password="oitc eomy qrow pwjq";
 	@Override
 	public String sendEmail(String to, String subject, String massage) {
 		Properties props = new Properties();
@@ -28,7 +29,7 @@ public class EmailSenderImpl implements EmailSender {
 		Session session = Session.getInstance(props, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("coachingswt@gmail.com", "yzuh lefx xkkt ussk");
+				return new PasswordAuthentication(username, password);
 			}
 		});
 		try {
@@ -46,7 +47,7 @@ public class EmailSenderImpl implements EmailSender {
 					+ "\r\n"
 					+ "Thank you,";
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("coachingswt@gmail.com"));
+			message.setFrom(new InternetAddress(username));
 			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
 			message.setSubject(subject);
 			message.setText(messagetemplate);

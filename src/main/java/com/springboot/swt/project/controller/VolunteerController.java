@@ -22,6 +22,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/valunteer")
+
 public class VolunteerController {
 
 	@Autowired

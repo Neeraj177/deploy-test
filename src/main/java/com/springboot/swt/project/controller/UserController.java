@@ -32,7 +32,8 @@ import jakarta.servlet.http.HttpSession;
 
 @RequestMapping("/user")
 @Controller
-public class UserController {
+public class
+UserController {
 
 	@Autowired
 	private UserServiceImpl userserviceimpl;
